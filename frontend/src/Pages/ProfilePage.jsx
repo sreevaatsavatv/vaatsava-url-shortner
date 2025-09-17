@@ -37,11 +37,7 @@ export default function Profile() {
             onMouseLeave={() => setHovered(false)}
           >
             <Center height="20vh" mt={50} mb={20}>
-              <Avatar
-                src="https://lh3.googleusercontent.com/a/ACg8ocJNs-Vgoc1mf-DjBC6VDPpG9EA0kezVBUcCfx-L-Ml9oRGQk24R=s96-c"
-                alt="it's me"
-                size={150}
-              />
+              <Avatar src={user?.avatar} alt="it's me" size={150} />
             </Center>
             <Center>
               <Text
