@@ -13,6 +13,7 @@ const obj = new Service();
 
 export default function UrlResponse(props) {
   const surl = obj.getBaseURL() + "/api/s/" + props?.response?.shortCode;
+  console.log(surl, props);
   return (
     <div>
       {

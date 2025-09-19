@@ -34,7 +34,7 @@ export const createShortUrl = async (req, res) => {
       //   expiresAt: expiresAt ? new Date(expiresAt) : null,
     });
     await newShortUrl.save();
-    return res.status(201).json({ newShortUrl });
+    return res.status(201).json(newShortUrl);
   } catch (error) {
     console.log(error);
     return res.status(500).json({ message: "Server Error" });
