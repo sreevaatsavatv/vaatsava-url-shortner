@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/url/shortner" element={<UrlShortner />} />
+        <Route path="/url/shortener" element={<UrlShortner />} />
         <Route path="/url/history" element={<UrlHistory />} />
         <Route element={<PrivateRoute />}></Route>
       </Routes>
