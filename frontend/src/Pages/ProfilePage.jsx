@@ -10,7 +10,7 @@ export default function Profile() {
 
   const getProfileData = async () => {
     try {
-      let data = await obj.get("user/me");
+      let data = await obj.get("/user/me");
       setUser(data);
       console.log(data);
     } catch (error) {
