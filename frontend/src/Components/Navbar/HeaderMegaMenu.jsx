@@ -18,7 +18,7 @@ import classes from "./HeaderMegaMenu.module.css";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/profile", label: "Profile" },
-  { to: "/url/shortner", label: "Url_Shortner" },
+  { to: "/url/shortener", label: "Url_Shortner" },
   { to: "/url/history", label: "Url_History" },
 ];
 
