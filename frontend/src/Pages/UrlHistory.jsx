@@ -27,7 +27,7 @@ function UrlHistory() {
     async function fetchUrls() {
       try {
         setLoading(true);
-        const response = await service.get("user/my/urls?page=1&limit=10");
+        const response = await service.get("/user/my/urls?page=1&limit=10");
         setUrls(response.shortURLs || []); // store URLs
         setError(null);
       } catch (err) {
