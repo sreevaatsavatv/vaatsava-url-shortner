@@ -46,7 +46,7 @@ const Home = () => {
               marginTop: "1rem",
             }}
           >
-            Sree Vaatsava App
+            URL Shortner App
           </Title>
 
           <Text
