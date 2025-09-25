@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function joinURL(baseURL, url) {
-    return `${baseURL}/${url}`;
+  return `${baseURL}/${url}`;
 }
 
 class Service {
@@ -52,7 +52,6 @@ class Service {
     return this.request(url, method, data);
   }
 
-
   getBaseURL = () => {
     if (import.meta.env.VITE_BZENV === "development") {
       return import.meta.env.VITE_DEV_PROXY || "http://localhost:3000"; // fallback proxy
@@ -61,4 +60,4 @@ class Service {
   };
 }
 
-export default Service
+export default Service;

@@ -10,13 +10,14 @@ export default function Profile() {
 
   const getProfileData = async () => {
     try {
-      let data = await obj.get("/user/me");
+      let data = await obj.get("user/me");
       setUser(data);
-      console.log(data);
+      // console.log(data.name);
     } catch (error) {
       console.log(error);
     }
   };
+  // console.log(user.name);
   useEffect(() => {
     getProfileData();
   }, []);
@@ -25,6 +26,7 @@ export default function Profile() {
     <div>
       {
         <Center style={{ height: "60vh", width: "100%" }}>
+          {/* <Text>{user?.name}</Text> */}
           <Container
             size="responsive"
             style={{
@@ -53,7 +55,6 @@ export default function Profile() {
                 {user?.name}
               </Text>
             </Center>
-
             <Center>
               <Text
                 size="xl"
@@ -67,7 +68,6 @@ export default function Profile() {
               >
                 Email: {user?.email}
               </Text>
-
               <br />
             </Center>
             <Center>
