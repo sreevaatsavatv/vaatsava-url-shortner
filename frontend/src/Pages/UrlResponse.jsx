@@ -52,14 +52,14 @@ export default function UrlResponse(props) {
             <QRCodeSVG
               imageSettings={{
                 excavate: true,
-                src: "https://mentorpick.com/static/images/mplogo.png",
+                src: "/favicon.png",
                 height: 100,
                 width: 100,
               }}
               value={surl}
               size={400}
             >
-              <Image src={"https://mentorpick.com/static/images/mplogo.png"} />
+              <Image src={"/favicon.png"} />
             </QRCodeSVG>
           </Container>
         </Container>
