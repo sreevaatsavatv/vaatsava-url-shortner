@@ -1,9 +1,4 @@
-import {
-  Card,
-  Center,
-  Stack,
-  Text,
-} from "@mantine/core";
+import { Card, Center, Stack, Text } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { GoogleLogin } from "@react-oauth/google";
 import { showNotification } from "@mantine/notifications";
@@ -92,7 +87,7 @@ export default function LoginPage() {
           <Text c="white" my="sm" size="lg">
             Login to{" "}
             <Text component="span" fw={700} c="white">
-              Being Zero 
+              Url Shortner
             </Text>
           </Text>
           <Stack align="center" spacing="lg">
